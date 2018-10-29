@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How to create your first grid</title>
+    <style>
+        body { font-family: sans-serif; }
+        div { background-color: silver; }
+        main {
+            display: grid;
+            grid-template-rows: 100px 100px;
+            grid-template-columns: 150px 150px 150px;
+			/* OR */
+			/* grid-template: 150px 150px / 150px 150px 150px; */
+			
+			grid-gap: 15px 20px; /* grid-gap: 20px; */
+			/* OR */
+			/* grid-row-gap: 20px; */
+			/* grid-column-gap: 20px; */
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div>Div 1</div> <div>Div 2</div> <div>Div 3</div>
+    <div>Div 4</div> <div>Div 5</div> <div>Div 6</div>
+</main>
+</body>
+</html>
